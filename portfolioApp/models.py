@@ -9,7 +9,7 @@ class Profile(models.Model):
     text = models.TextField()
     address=models.CharField(max_length=100)
     company=models.CharField(max_length=100, blank=True)
-    
+
     UTitle = models.TextField(blank=True)
     University = models.TextField(blank=True)
 
@@ -18,6 +18,13 @@ class Profile(models.Model):
 
     STitle = models.TextField(blank=True)
     School = models.TextField(blank=True)
+
+    skill1=models.CharField(max_length=100)
+    skill2=models.CharField(max_length=100)
+    skill3=models.CharField(max_length=100)
+    skill4=models.CharField(max_length=100)
+    skill5=models.CharField(max_length=100)
+    skill6=models.CharField(max_length=100)
 
     def get_absolute_url(self):
         return reverse("portfolioapp:homeview")
