@@ -1,0 +1,18 @@
+{% extends "portfolioApp/portfolioview.html" %}
+{% load bootstrap5 %}
+{% block content %}
+
+<div class="row justify-content-center">
+<div class="mt-3 card text-center" style="width:30rem;">
+{% for text in aboutme_list %}
+  <p class="card-body">{{text.text}}</p>
+  {% if user.is_authenticated %}
+  <a href="{% url 'portfolioapp:aboutmeupdate'  pk=text.pk %}" ><button class="btn btn-sm btn-primary">Edit</button>
+  </a>
+  {% endif %}
+{% endfor %}
+</div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "portfolioApp/portfolioview.html" %}
+{% block content %}
+{% load bootstrap5 %}
+
+  <div class="row justify-content-center">
+  <div class="card shadow text-center" style="width:25rem;">
+    <div class="container">
+      <form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        {% buttons %}
+          <button type="submit" class="btn btn-sm btn-warning">Update</button>
+        {% endbuttons %}
+      </form>
+    </div>
+</div>
+  </div>
+{% endblock %}
