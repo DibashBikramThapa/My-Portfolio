@@ -57,7 +57,26 @@
               </div>
               {% if homecheck %}
               <div class="mt-3 text-center">
-                    Welcome to my portfolio!
+
+
+                  {%for item in profile_list %}
+                    Welcome to {{item.user}} portfolio!<br><BR><br>
+
+                <div class="row justify-content-center">
+                  <div class="card shadow" style='width:30rem;'>
+                    <div class="card-body">
+
+                    MY EDUCATION <br> <br>
+                    {{item.UTitle}}<br>
+                    {{item.University}}<br><BR>
+                    {{item.HTitle}}<br>
+                    {{item.Highschool}}<br><BR>
+                    {{item.STitle}}<br>
+                    {{item.School}}
+                  {% endfor %}
+                      </div>
+                    </div>
+                </div>
               </div>
 
               {% endif %}
