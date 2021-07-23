@@ -2,12 +2,17 @@
   color:black;
 
 }
+
 .nav-link:hover{
   color:black;
 }
 
 .links:hover{
   background-color:skyblue;
+}
+
+.navlink:hover{
+  background-color:orange;
 }
 
 

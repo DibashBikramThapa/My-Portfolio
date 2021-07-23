@@ -2,7 +2,7 @@ fetch('https://api.github.com/users/DibashBikramThapa')
   .then(response => response.json())
   .then(function(data){
 
-    document.getElementById('list').textContent='My projects click!:'
+    document.getElementById('list').textContent='My github projects!:'
     document.getElementById('list').href=data['html_url']
 
 })
