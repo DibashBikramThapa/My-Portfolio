@@ -43,15 +43,16 @@
               <nav class="navbar navbar-light shadow bg-success">
                 <div class="container-fluid">
                     <a class="navbar-brand"  href="{% url "portfolioapp:homeview" %}">Home</a>
+                      <a class=" nav-link"  href="{% url "portfolioapp:projectview" %}">Projects</a>
                   <div class="nav ml-auto" >
-                    <a class=" nav-item nav-link"  href="{% url "portfolioapp:projectview" %}">Projects</a>
 
-                      <a class=" nav-item nav-link"  href="{% url "portfolioapp:aboutme" %}">About ME</a>
-                    <a class=" nav-item">
+
+                      <a class=" nav-link"  href="{% url "portfolioapp:aboutme" %}">About ME</a>
+
                         {%for item in profile_list %}
                       <img src="{{ item.profilepic.url }}" height="40" width="40">
                       {% endfor %}
-                    </a>
+                    
                     </div>
                 </div>
               </nav>
