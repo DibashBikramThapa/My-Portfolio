@@ -3,6 +3,11 @@
 
 }
 
+.nav-link:hover{
+  color:black;
+  background-color:skyblue;
+}
+
 
 body{
   background-color:white;
