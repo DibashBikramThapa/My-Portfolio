@@ -31,3 +31,15 @@ To show the projects, I used github api to fetch the repos and github. For examp
         })
 
 #### For database, default sqlite3 is used locally and deployed in heroku.
+
+## Project SS
+
+Profileview: ![profileview](/projectss/profileview.png)
+
+Projectlistview: ![projectview](/projectss/projectview.png)
+
+ABoutmeview: ![aboutmeview](/projectss/Aboutme.png)
+
+Profileeditview: ![profileeditview](/projectss/profileedit.png)
+
+ABoutmeeditiew: ![aboutmeeditview](/projectss/aboutmeedit.png)
