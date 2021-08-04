@@ -23,7 +23,7 @@ fetch('https://api.github.com/users/DibashBikramThapa/repos')
         document.getElementById('4').textContent=data[3]['name']
         document.getElementById('4').href=data[3]['html_url']
 
-        document.getElementById('5').textContent=data[4]['name']
-        document.getElementById('5').href=data[4]['html_url']
+        document.getElementById('5').textContent=data[6]['name']
+        document.getElementById('5').href=data[6]['html_url']
 
     })
