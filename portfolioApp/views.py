@@ -6,11 +6,15 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView, UpdateView,TemplateView,View
 
 
+def logme(request):
+    return render(request,'portfolioApp/login.html')
+
+
 class PortfolioView(ListView):
     model = Profile
     template_name='portfolioApp/portfolioview.html'
     extra_context={'homecheck':True}
-    
+
 
 class PortfolioUpdateView(LoginRequiredMixin, UpdateView):
     model=Profile

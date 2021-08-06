@@ -5,6 +5,7 @@ app_name='portfolioapp'
 
 
 urlpatterns = [
+    path('logme/',views.logme,name='logme'),
     path('', views.PortfolioView.as_view(), name='homeview'),
     path('aboutme/', views.AboutMeView.as_view(),name='aboutme'),
     path('aboutme/<int:pk>/edit', views.AboutMeForm.as_view(),name='aboutmeupdate'),
